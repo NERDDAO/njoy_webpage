@@ -1,0 +1,46 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root,
+[data-theme] {
+  background: oklch(var(--b2));
+}
+
+body {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.btn {
+  @apply shadow-md;
+}
+
+.bgimg {
+  background-image: url('../public/winxpwallpaper.jpg');
+}
+
+.dropflex {
+  display: flex !important;
+  background: linear-gradient(to bottom, rgba(19, 97, 199, 1) 0%, rgba(107, 172, 247, 1) 23%, rgba(107, 172, 247, 1) 79%, rgba(19, 97, 199, 1) 100%);
+  box-shadow: inset 0px 4px 2px 0px rgba(255,255,255,0.31);
+}
+
+.dropnav { 
+  min-height:1.84rem !important;
+}
+
+.btn.btn-ghost {
+  @apply shadow-none;
+}
